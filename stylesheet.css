@@ -101,7 +101,7 @@ body {
   .container {
     width: 100vw; /* Define a largura do contêiner */
     margin: 0 auto; /* Centraliza o contêiner na página */
-    padding: auto;
+    
     background-color: rgba(
       0,
       0,
