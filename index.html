@@ -10,16 +10,79 @@
         <title>Portfilio Paulo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="stylesheet.css"/>
+
+        <script src="main.js"></script>
+
     </head>
-    
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <h1>Olá malta, está tudo bem?</h1>
+        <nav class="navbar">
+            <ul>
+              <li><a href="#" onclick="trocarContainers(2)">Portfólio</a></li>            
+              <li><a href="#">Sobre mim</a></li>
+              <li><a href="#" onclick="trocarContainers(1)">Contactos</a></li>
+            </ul>
+          </nav>
+<br><br>
         
-        <script src="" async defer></script>
+<!------------------------------------------------------------------------------------------------->
+        <div id="container1" class="container">
+    <div class="column">
+        <br>
+        <img src="images/foto_perfil.jpg" alt="foto_perfil">
+        <p style="color: #fff;">Sua legenda aqui</p>
+    </div>
+    <div class="column">
+        <br>
+        <img src="images/foto_perfil.jpg" alt="foto_perfil">
+        <p style="color: #fff;">Sua legenda aqui</p>
+    </div>
+    <div class="column">
+        <br>
+        <img src="images/foto_perfil.jpg" alt="foto_perfil">
+        <p style="color: #fff;">Sua legenda aqui</p>
+    </div>
+</div>
+        
+<!------------------------------------------------------------------------------------------------->
+
+<div id="container2" class="container2">
+    <div class="column2 img">
+        <br>
+        <center><img src="images/foto_perfil.jpg" alt="foto_perfil"> </center>
+        <p style="color: #fff;">Paulo Loureiro<br> 19 Anos</p>
+    </div>
+    <div class="column2">
+
+        <div class="social-icons">
+            <a href="https://github.com/NoKarmaPT" target="_blank">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.385.6.11.793-.26.793-.577 0-.285-.01-1.23-.015-2.232-3.338.724-4.042-1.613-4.042-1.613-.546-1.384-1.332-1.754-1.332-1.754-1.09-.745.083-.73.083-.73 1.204.085 1.838 1.236 1.838 1.236 1.07 1.832 2.81 1.304 3.497.997.108-.775.418-1.304.762-1.604-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.468-2.385 1.235-3.226-.124-.304-.536-1.526.117-3.178 0 0 1.007-.322 3.3 1.23.957-.265 1.98-.397 3-.402 1.02.005 2.043.137 3 .402 2.29-1.552 3.295-1.23 3.295-1.23.656 1.652.243 2.874.118 3.178.77.841 1.234 1.916 1.234 3.226 0 4.61-2.805 5.623-5.475 5.92.43.37.815 1.102.815 2.22 0 1.603-.015 2.893-.015 3.288 0 .32.187.693.8.573C20.566 21.793 24 17.293 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href ="https://www.linkedin.com/in/paulo-loureiro-91a3b31b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMw5gemYLTXSJWdfBQK3MVw%3D%3D" target="_blank">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" style="fill:#FFFFFF;">
+                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/paulo._.nk/" target="_blank">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30" style="fill:#FFFFFF;">
+                    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                </svg>
+            </a>
+            </div>
+    </div>
+
+</div>
+
+
+
+
+
+
     </body>
 </html>
