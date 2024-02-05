@@ -1,5 +1,11 @@
 document.body.style.backgroundImage = "images/optimised_background_image.jpg";
 
+// Preload the image
+var image = new Image();
+image.src = 'images/optimised_background_image.jpg';
+image.onload = function() {
+    document.body.classList.add('loaded'); // Add loaded class to body once the image is fully loaded
+};
 
 
 function trocarContainers(containerAtivo) {
@@ -20,3 +26,5 @@ function trocarContainers(containerAtivo) {
         document.querySelector('.navbar a:nth-child(1)').classList.add('active');
     }
 }
+
+
